@@ -80,11 +80,15 @@ My biggest goal for this year is to be able to pay my living expenses with my on
 
 If you're in a position where monetary support isn't an option (believe me, I understand), then you can also help out by liking/sharing my shit on Social Media. This helps me with SEO and building an audience, and I greatly appreciate it! Lastly, drop me a comment on one of my videos. I read them. <3
 
-[G+] (https://plus.google.com/+wiseass)
+[G+](https://plus.google.com/+wiseass)
+
 [Facebook](https://www.facebook.com/wiseassblog/)
-[Twitter] (https://twitter.com/wiseAss301)
-[Patreon] (https://www.patreon.com/bePatron?u=5114325)
-[Primary Website] (http://wiseassblog.com/)
+
+[Twitter](https://twitter.com/wiseAss301)
+
+[Patreon](https://www.patreon.com/bePatron?u=5114325)
+
+[Primary Website](http://wiseassblog.com/)
 
 ## License
 
