@@ -38,12 +38,14 @@ I'm also looking at adding the following Libraries for future iterations:
 
 Keeping in mind that I going on random tangets will be common (I don't get to talk about Code with people much lol), here's a rough idea of the topics I'll be covering:
 
-### Day 1: 
+### Day 1:
+[Click here to view the Video](https://www.youtube.com/watch?v=4QSeM2rNpf8)
 * Tips and tricks for setting up a new App's structure, colors, styles and so forth
 * We'll create the classes necessary for our first three MVP Components
 * We'll finish the UI for those components
 
 ### Day 2:
+**Episode will start at 8:30am PST (10:00pm IST) March 1st. Click the Livestream link at the top of this README**
 * I'll do my best to explain Model View Presenter Architecture and how it can help us with testing
 * We'll set up our project to have Mock and Production build Variants, also to help with testing
 * We'll write the View and Activity for our first three components
