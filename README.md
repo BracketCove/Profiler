@@ -38,7 +38,8 @@ I'm also looking at adding the following Libraries for future iterations:
 
 Keeping in mind that I going on random tangets will be common (I don't get to talk about Code with people much lol), here's a rough idea of the topics I'll be covering:
 
-### Day 1: 
+### Day 1:
+[Click here to view the Video](https://www.youtube.com/watch?v=4QSeM2rNpf8)
 * Tips and tricks for setting up a new App's structure, colors, styles and so forth
 * We'll create the classes necessary for our first three MVP Components
 * We'll finish the UI for those components
