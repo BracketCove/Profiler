@@ -3,4 +3,20 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_welcome">Welcome to Profiler</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="hint_email">email@example.com</string>
+    <string name="hint_password">123456</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_register">Register</string>
+    <string name="header_create">Create a New Account</string>
+    <string name="prompt_name">Name</string>
+    <string name="hint_username">John Smith</string>
+    <string name="prompt_create_account">CREATE ACCOUNT</string>
+    <string name="prompt_confirm_password">Confirm</string>
+    <string name="user_bio">About Me</string>
+    <string name="user_bio_example">Tell us a bit about yourself!</string>
+    <string name="user_interests">Interests</string>
+    <string name="user_interests_example">What are your favourite things to do?</string>
 </resources>

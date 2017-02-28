@@ -1,4 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- *********************** Input Fields  *********************** -->
+    <style name="InputField" parent="Widget.AppCompat.EditText" />
+
+    <style name="InputField.Credential">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_widget_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_widget_margin</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="InputField.Credential.Email">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="InputField.Credential.Password">
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <!-- *********************** Labels  *********************** -->
+    <style name="Label">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Label.CredentialHeader">
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="Label.Sub">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_widget_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_widget_margin</item>
+    </style>
+
+    <style name="Label.UserAvatarEmail">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Label.UserAvatarName" >
+        <item name="android:textSize">38sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Label.DetailSubHeader">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="Label.EditDetailSubHeader">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="Label.UserDetailContent">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:minHeight">124dp</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- *********************** Containers  *********************** -->
+    <style name="UserDetailContainer">
+        <item name="android:elevation">8dp</item>
+        <item name="android:background">@drawable/user_detail_background</item>
+    </style>
+
+    <style name="UserAvatarContainer">
+        <item name="android:background">@drawable/user_avatar_background</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+    <!-- *********************** Buttons  *********************** -->
+    <style name="Button.Flat" parent="Widget.AppCompat.Button.Borderless" />
+
+    <style name="Button.Flat.Primary">
+        <item name="android:background">@drawable/button_flat</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">16sp</item>
+        <item name="android:paddingRight">16sp</item>
+    </style>
+
+    <!-- *********************** Others  *********************** -->
+    <style name="DividerAccent">
+        <item name="android:background">@drawable/horizontal_divider_accent</item>
+    </style>
+
+    <style name="DividerAccent.UserDetail">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
 
 </resources>

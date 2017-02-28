@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wiseass.profiler.createaccount.CreateAccountFragment"
+    android:id="@+id/root_create_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <ScrollView
+        android:id="@+id/scv_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cont_create_account_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            >
+
+            <TextView
+                android:id="@+id/lbl_create_header"
+                style="@style/Label.CredentialHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/header_create" />
+
+            <TextView
+                android:id="@+id/lbl_create_name_sub"
+                style="@style/Label.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_create_header"
+                android:text="@string/prompt_name" />
+
+            <EditText
+                android:id="@+id/edt_create_name"
+                style="@style/InputField.Credential.Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_create_name_sub"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint_username" />
+
+            <TextView
+                android:id="@+id/lbl_create_email_sub"
+                style="@style/Label.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_create_name"
+                android:text="@string/prompt_email" />
+
+            <EditText
+                android:id="@+id/edt_create_email"
+                style="@style/InputField.Credential.Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_create_email_sub"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint_email" />
+
+            <TextView
+                android:id="@+id/lbl_create_password_sub"
+                style="@style/Label.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_create_email"
+                android:text="@string/prompt_password" />
+
+            <EditText
+                android:id="@+id/edt_create_password"
+                style="@style/InputField.Credential.Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_create_password_sub"
+                android:gravity="center_horizontal"
+                android:hint="@string/prompt_password"
+                tools:text="8675308" />
+
+            <TextView
+                android:id="@+id/lbl_create_confirmation_sub"
+                style="@style/Label.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_create_password"
+                android:text="@string/prompt_confirm_password" />
+
+            <EditText
+                android:id="@+id/edt_create_confirmation"
+                style="@style/InputField.Credential.Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_create_confirmation_sub"
+                android:gravity="center_horizontal"
+                android:hint="@string/prompt_password"
+                tools:text="8675308" />
+
+            <Button
+                android:id="@+id/btn_create_account"
+                style="@style/Button.Flat.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_below="@+id/edt_create_confirmation"
+                android:layout_centerHorizontal="true"
+                android:text="@string/prompt_create_account" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

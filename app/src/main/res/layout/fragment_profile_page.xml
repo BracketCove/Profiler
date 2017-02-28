@@ -1,13 +1,174 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     tools:context="com.wiseass.profiler.profilepage.ProfilePageFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/cont_profile_page_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <RelativeLayout
+            android:id="@+id/cont_profile_page_avatar"
+            style="@style/UserAvatarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/imb_page_logout"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:src="@drawable/ic_vpn_key_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/imb_page_user_settings"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/imb_page_logout"
+                android:background="@null"
+                android:src="@drawable/ic_settings_white_24dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imb_page_thumbnail"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="32dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_page_user_name"
+                style="@style/Label.UserAvatarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lbl_page_user_email"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imb_page_thumbnail"
+                tools:text="Derp Derpsen" />
+
+
+            <TextView
+                android:id="@+id/lbl_page_user_email"
+                style="@style/Label.UserAvatarEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="64dp"
+                android:layout_toRightOf="@id/imb_page_thumbnail"
+                tools:text="derp@test.com" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cont_profile_detail_bio"
+            style="@style/UserDetailContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_page_user_bio_sub"
+                style="@style/Label.DetailSubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:text="@string/user_bio" />
+
+            <View
+                android:id="@+id/div_bio"
+                style="@style/DividerAccent.UserDetail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lbl_page_user_bio_sub"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_page_user_bio"
+                style="@style/Label.UserDetailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_bio"
+                tools:text="@string/user_bio_example"
+                android:ellipsize="end"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cont_profile_detail_interests"
+            style="@style/UserDetailContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_page_user_interests_sub"
+                style="@style/Label.DetailSubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_border_black_24dp"
+                android:text="@string/user_interests" />
+
+            <View
+                android:id="@+id/div_interests"
+                style="@style/DividerAccent.UserDetail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lbl_page_user_interests_sub" />
+
+            <TextView
+                android:id="@+id/lbl_page_interests"
+                style="@style/Label.UserDetailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_interests"
+                android:background="@drawable/user_detail_background"
+                android:ellipsize="end"
+                tools:text="@string/user_interests_example" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_edit_profile_details"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:scaleType="center"
+            android:src="@drawable/ic_create_white_24dp" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
