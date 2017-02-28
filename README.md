@@ -45,6 +45,7 @@ Keeping in mind that I going on random tangets will be common (I don't get to ta
 * We'll finish the UI for those components
 
 ### Day 2:
+**Episode will start at 8:30am PST (10:00pm IST) March 1st. Click the Livestream link at the top of this README**
 * I'll do my best to explain Model View Presenter Architecture and how it can help us with testing
 * We'll set up our project to have Mock and Production build Variants, also to help with testing
 * We'll write the View and Activity for our first three components
