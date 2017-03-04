@@ -45,19 +45,22 @@ Keeping in mind that I going on random tangets will be common (I don't get to ta
 * We'll finish the UI for those components
 
 ### Day 2:
-**Episode will start at 8:30am PST (10:00pm IST) March 1st. Click the Livestream link at the top of this README**
+[Click here to view the Video](https://www.youtube.com/watch?v=Fi_gywibris)
 * I'll do my best to explain Model View Presenter Architecture and how it can help us with testing
 * We'll set up our project to have Mock and Production build Variants, also to help with testing
 * We'll write the View and Activity for our first three components
 
 ### Day 3:
+**will be streamed Sat. Mar. 4th at 8:00pm PST (Sun. Mar. 5th at 9:30am IST). Click the stream link at the top**
 * I'll do my best to explain RxJava/Android 2... and hope to hell that it makes sense to someone...
 * We'll create Fake versions of our Service Layer, so that we can get testing!
+* We'll get started writing some Unit Tests
 * We'll write our Presenters and Contract Classes for our first three components
 
 ### Day 4:
-* Unit Test all the things (well... some of the things). I'm quite happy to hear input on this one!
-* Write our real Service Layer
+* We'll learn about setting up Firebase
+* We'll write the real versions of our Service Layer
+* We may even get to doing some Instrumented Tests!
 
 ### Day 5-8:
 * Build the rest of the App. I have no idea how long that will take lol.
