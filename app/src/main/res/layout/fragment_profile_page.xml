@@ -52,6 +52,7 @@
                 android:layout_marginBottom="32dp"
                 android:background="@null"
                 android:scaleType="centerCrop"
+                tools:src="@drawable/default_profile_pic"
                 app:civ_border_color="@color/colorAccent"
                 app:civ_border_width="1dp" />
 
@@ -147,7 +148,7 @@
                 android:layout_below="@+id/lbl_page_user_interests_sub" />
 
             <TextView
-                android:id="@+id/lbl_page_interests"
+                android:id="@+id/lbl_page_user_interests"
                 style="@style/Label.UserDetailContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

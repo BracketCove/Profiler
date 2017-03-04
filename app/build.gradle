@@ -12,17 +12,47 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        release {
+        debug {
+            testCoverageEnabled true
+
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            useProguard false
+        }
+
+        release {
+            minifyEnabled true
+
+            useProguard true
         }
     }
 
     productFlavors {
-        //mock
+        mock {
+            applicationIdSuffix = ".mock"
+        }
 
-        //prod
+        prod {
+            applicationIdSuffix = ".prod"
+        }
     }
+
+    //remove mockRelease build variant because we don't need it
+    android.variantFilter { variant ->
+        if (variant.buildType.name.equals('release')
+                && variant.getFlavors().get(0).name.equals('mock')) {
+            variant.setIgnore(true);
+        }
+    }
+
+    // Always show the result of every unit test, even if it passes.
+    testOptions.unitTests.all {
+        testLogging {
+            events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+        }
+    }
+
+
 }
 
 dependencies {
@@ -34,6 +64,10 @@ dependencies {
     compile 'com.android.support:support-v4:25.1.0'
     compile 'com.android.support:design:25.1.0'
 
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
     compile 'de.hdodenhof:circleimageview:2.1.0'
     testCompile 'junit:junit:4.12'
+
+
 }
