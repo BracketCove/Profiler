@@ -16,9 +16,9 @@ While I'm certain that there will be some value in watching the series and looki
 I personally consider myself to be an Intermediate Android Developer (although I'm not sure how that's quantified, so who knows). I've spent the past 2+ years working with the Android platform, and I've made a couple small to medium scale Apps. I've never worked as a Developer other than as a hobby, and I don't have a degree in anything. As a result, I may explain concepts using bizarre working class language/analogies and a distinct lack of the appropriate Jargon (this is also partly due to most of my viewer base being ESL).
 
 As such, please feel free to suggest changes and give constructive feedback about the project. My goal is to write awesome code, not lead anyone down the wrong path; I'll give credit where it's due if you take the time to help me out. I will mention two things about feedback:
-*Although research and leg work is something I'm very used to doing, I would greatly appreciate it if potential changes and suggestions be explained/referenced appropriately.  
+* Although research and leg work is something I'm very used to doing, I would greatly appreciate it if potential changes and suggestions be explained/referenced appropriately.  
 
-*Lastly, be respectful and don't talk to me like I'm an idiot. I don't have time for intellectual dick measureing contests as I'm too busy doing what I love. 'nuff said.
+* Be respectful and don't talk to me like I'm an idiot. I don't have time for intellectual dick measureing contests as I'm too busy doing what I love. 'nuff said.
 
 ## Topics:
 One of my goals with this project, is to leverage a few of today's most popular Libraries, technologies, and Software Architecture concepts. Below is a list of the current Principles/Libs I use with the project, followed by some things I'd like to add to it later.
