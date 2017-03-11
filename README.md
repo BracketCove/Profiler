@@ -41,8 +41,8 @@ Keeping in mind that I going on random tangets will be common (I don't get to ta
 ### Day 1:
 [Click here to view the Video](https://www.youtube.com/watch?v=4QSeM2rNpf8)
 * Tips and tricks for setting up a new App's structure, colors, styles and so forth
-* We'll create the classes necessary for our first three MVP Components
-* We'll finish the UI for those components
+* Basic new App Class Structure
+* Simple Material Design layouts
 
 ### Day 2:
 [Click here to view the Video](https://www.youtube.com/watch?v=Fi_gywibris)
@@ -51,19 +51,28 @@ Keeping in mind that I going on random tangets will be common (I don't get to ta
 * We'll write the View and Activity for our first three components
 
 ### Day 3:
-**will be streamed Sat. Mar. 4th at 8:00pm PST (Sun. Mar. 5th at 9:30am IST). Click the stream link at the top**
+
+[Click here to view the Video](https://www.youtube.com/watch?v=2QKynB7LVPk)
 * I'll do my best to explain RxJava/Android 2... and hope to hell that it makes sense to someone...
 * We'll create Fake versions of our Service Layer, so that we can get testing!
 * We'll get started writing some Unit Tests
-* We'll write our Presenters and Contract Classes for our first three components
 
 ### Day 4:
-* We'll learn about setting up Firebase
-* We'll write the real versions of our Service Layer
-* We may even get to doing some Instrumented Tests!
+**To be streamed at 7:00pm PST Mar. 11th (8:30am IST Mar. 12th). Click the Link at the top of this README**
+* We'll write a Presenter with RxJava 2
+* We'll write a real Service for FirebaseAuth
+* I'll walk you through some things I learned when working with FirebaseAuth and Firebase Realtime Database
 
-### Day 5-8:
-* Build the rest of the App. I have no idea how long that will take lol.
+### Moving Forward:
+Now that I've hopefully caught people up on the basics of the App, I intend to work on improving it during my regular Livestreams (I'll provide more details on that later.)
+
+### Current plans to improve the App:
+* Chat Component (in the works)
+* Local and Remote Database (possibility since Firebase Realtime Database kind of does this already)
+* Better Error/Event handling (in the works)
+* UI Testing with Espresso (in the works)
+* Animations and general UI Improvments (in the works)
+
 
 ## Sources
 
