@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 import com.wiseass.profiler.R;
 import com.wiseass.profiler.createaccount.CreateAccountActivity;
+import com.wiseass.profiler.data.auth.AuthInjection;
+import com.wiseass.profiler.data.scheduler.SchedulerInjection;
 import com.wiseass.profiler.profilepage.ProfilePageActivity;
 
 /**
@@ -52,12 +54,12 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     @Override
     public void onActivityCreated (Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        if (presenter == null) {
+        /*if (presenter == null) {
             presenter = new LoginPresenter(
                     AuthInjection.provideAuthSource(),
                     this,
                     SchedulerInjection.provideSchedulerProvider());
-        }
+        }*/
 
         presenter.subscribe();
     }

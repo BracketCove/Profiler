@@ -17,12 +17,8 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
-import com.wiseass.profiler.FragmentTemplate;
 import com.wiseass.profiler.R;
 import com.wiseass.profiler.login.LoginActivity;
-
-import static android.R.attr.name;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -95,7 +91,7 @@ public class ProfilePageFragment extends Fragment implements ProfilePageContract
         super.onActivityCreated(savedInstanceState);
         //Where we create our presenter if necessary
         if (presenter == null) {
-            presenter = new ProfilePagePresenter();
+            //presenter = new ProfilePagePresenter();
         }
 
         presenter.subscribe();

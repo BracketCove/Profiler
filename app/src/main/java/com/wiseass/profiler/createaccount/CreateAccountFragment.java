@@ -16,6 +16,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wiseass.profiler.R;
+import com.wiseass.profiler.data.auth.AuthInjection;
+import com.wiseass.profiler.data.database.DatabaseInjection;
+import com.wiseass.profiler.data.scheduler.SchedulerInjection;
 import com.wiseass.profiler.login.LoginActivity;
 import com.wiseass.profiler.profilepage.ProfilePageActivity;
 
