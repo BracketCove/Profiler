@@ -16,8 +16,9 @@ While I'm certain that there will be some value in watching the series and looki
 I personally consider myself to be an Intermediate Android Developer (although I'm not sure how that's quantified, so who knows). I've spent the past 2+ years working with the Android platform, and I've made a couple small to medium scale Apps. I've never worked as a Developer other than as a hobby, and I don't have a degree in anything. As a result, I may explain concepts using bizarre working class language/analogies and a distinct lack of the appropriate Jargon (this is also partly due to most of my viewer base being ESL).
 
 As such, please feel free to suggest changes and give constructive feedback about the project. My goal is to write awesome code, not lead anyone down the wrong path; I'll give credit where it's due if you take the time to help me out. I will mention two things about feedback:
-*Although research and leg work is something I'm very used to doing, I would greatly appreciate it if potential changes and suggestions be explained/referenced appropriately.  
-*Be respectful and don't talk to me like I'm an idiot. I don't have time for intellectual dick measureing contests as I'm too busy doing what I love. 'nuff said.
+* Although research and leg work is something I'm very used to doing, I would greatly appreciate it if potential changes and suggestions be explained/referenced appropriately.  
+
+* Be respectful and don't talk to me like I'm an idiot. I don't have time for intellectual dick measureing contests as I'm too busy doing what I love. 'nuff said.
 
 ## Topics:
 One of my goals with this project, is to leverage a few of today's most popular Libraries, technologies, and Software Architecture concepts. Below is a list of the current Principles/Libs I use with the project, followed by some things I'd like to add to it later.
@@ -41,8 +42,8 @@ Keeping in mind that I going on random tangets will be common (I don't get to ta
 ### Day 1:
 [Click here to view the Video](https://www.youtube.com/watch?v=4QSeM2rNpf8)
 * Tips and tricks for setting up a new App's structure, colors, styles and so forth
-* We'll create the classes necessary for our first three MVP Components
-* We'll finish the UI for those components
+* Basic new App Class Structure
+* Simple Material Design layouts
 
 ### Day 2:
 [Click here to view the Video](https://www.youtube.com/watch?v=Fi_gywibris)
@@ -51,19 +52,28 @@ Keeping in mind that I going on random tangets will be common (I don't get to ta
 * We'll write the View and Activity for our first three components
 
 ### Day 3:
-**will be streamed Sat. Mar. 4th at 8:00pm PST (Sun. Mar. 5th at 9:30am IST). Click the stream link at the top**
+
+[Click here to view the Video](https://www.youtube.com/watch?v=2QKynB7LVPk)
 * I'll do my best to explain RxJava/Android 2... and hope to hell that it makes sense to someone...
 * We'll create Fake versions of our Service Layer, so that we can get testing!
 * We'll get started writing some Unit Tests
-* We'll write our Presenters and Contract Classes for our first three components
 
 ### Day 4:
-* We'll learn about setting up Firebase
-* We'll write the real versions of our Service Layer
-* We may even get to doing some Instrumented Tests!
+**To be streamed at 7:00pm PST Mar. 11th (8:30am IST Mar. 12th). Click the Link at the top of this README**
+* We'll write a Presenter with RxJava 2
+* We'll write a real Service for FirebaseAuth
+* I'll walk you through some things I learned when working with FirebaseAuth and Firebase Realtime Database
 
-### Day 5-8:
-* Build the rest of the App. I have no idea how long that will take lol.
+### Moving Forward:
+Now that I've hopefully caught people up on the basics of the App, I intend to work on improving it during my regular Livestreams (I'll provide more details on that later.)
+
+### Current plans to improve the App:
+* Chat Component (in the works)
+* Local and Remote Database (possibility since Firebase Realtime Database kind of does this already)
+* Better Error/Event handling (in the works)
+* UI Testing with Espresso (in the works)
+* Animations and general UI Improvments (in the works)
+
 
 ## Sources
 
