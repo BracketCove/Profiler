@@ -6,6 +6,6 @@ package com.wiseass.profiler.data.database;
 
 public class DatabaseInjection {
     public static DatabaseSource provideDatabaseSource() {
-        return FakeDatabaseSource.getInstance();
+        return FakeDatabaseService.getInstance();
     }
 }

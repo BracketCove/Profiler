@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/root_fragment_photo_detail"
+    tools:context="com.wiseass.profiler.profiledetail.ProfileDetailFragment">
+
+    <RelativeLayout
+        android:id="@+id/cont_photo_detail_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <ImageButton
+            android:id="@+id/imb_photo_detail_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/imb_photo_detail_done"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/ic_done_white_24dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_photo_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cont_photo_detail_buttons"
+        android:scaleType="centerCrop"
+        />
+
+    <ProgressBar
+        android:id="@+id/pro_photo_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

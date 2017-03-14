@@ -79,6 +79,18 @@
                 android:layout_toRightOf="@id/imb_page_thumbnail"
                 tools:text="derp@test.com" />
 
+            <ProgressBar
+                android:id="@+id/pro_profile_page_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginBottom="64dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:visibility="visible"
+                />
 
         </RelativeLayout>
 
@@ -119,6 +131,15 @@
                 android:ellipsize="end"
                 />
 
+            <ProgressBar
+                android:id="@+id/pro_profile_page_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_bio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorAccent" />
 
         </RelativeLayout>
 
@@ -157,6 +178,16 @@
                 android:ellipsize="end"
                 tools:text="@string/user_interests_example" />
 
+            <ProgressBar
+                android:id="@+id/pro_profile_page_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_interests"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:layout_centerHorizontal="true"
+                android:indeterminateTint="@color/colorAccent" />
+
         </RelativeLayout>
 
         <android.support.design.widget.FloatingActionButton
@@ -170,6 +201,7 @@
             android:src="@drawable/ic_create_white_24dp" />
 
     </LinearLayout>
+
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -1,7 +1,5 @@
 package com.wiseass.profiler.data.database;
 
-import com.wiseass.profiler.data.GenericTestData;
-
 import io.reactivex.Completable;
 import io.reactivex.Maybe;
 
@@ -9,21 +7,31 @@ import io.reactivex.Maybe;
  * Created by Ryan on 10/02/2017.
  */
 
-public class FakeDatabaseSource implements DatabaseSource {
+public class FakeDatabaseService implements DatabaseSource {
     boolean returnFailure = false;
     boolean returnEmpty = false;
+
+    private static final Profile fakeProfile =
+            new Profile(
+                    "",
+                    "",
+                    "someId",
+                    "email@example.com",
+                    "someUrl",
+                    "Derp"
+            );
 
     @Override
     public void setReturnEmpty(boolean returnEmpty) {
         this.returnEmpty = returnEmpty;
     }
 
-    public FakeDatabaseSource(){
+    public FakeDatabaseService(){
 
     }
 
-    public static FakeDatabaseSource getInstance (){
-        return new FakeDatabaseSource();
+    public static FakeDatabaseService getInstance (){
+        return new FakeDatabaseService();
     }
 
     @Override
@@ -46,7 +54,8 @@ public class FakeDatabaseSource implements DatabaseSource {
         } else if (returnEmpty) {
             return Maybe.empty();
         }
-        return Maybe.just(GenericTestData.getProfile());
+        //TODO: make static fake Profile for testing
+        return Maybe.just(fakeProfile);
     }
 
     @Override

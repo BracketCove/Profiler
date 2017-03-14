@@ -20,4 +20,54 @@
     <string name="user_interests">Interests</string>
     <string name="user_interests_example">What are your favourite things to do?</string>
     <string name="action_logout">Log Out</string>
+    <string name="error_empty_input">Inputs may not be Empty</string>
+    <string name="error_invalid_email">Email not valid</string>
+    <string name="error_password_too_long">Password too long</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_enter_password">Enter Password to Confirm\:</string>
+    <string name="prompt_confirm">Confirm</string>
+    <string name="action_create_account">Create Account</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="trouble_signing_in">Trouble signing in?</string>
+    <string name="next">Next</string>
+    <string name="error_auth_failed">Unable to Authenticate User</string>
+    <string name="error_password_mismatch">Passwords inputs must match</string>
+    <string name="error_create_account_unsuccesful">Account Creation Unsuccesful</string>
+    <string name="action_change_thumbnail">Change Thumbnail</string>
+    <string name="action_edit_profile_details">Edit Details</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="action_delete_account">Delete Account</string>
+
+    <string name="user_email"><b>Email\:</b></string>
+    <string name="user_name"><b>Name\:</b></string>
+    <string name="user_age"><b>Age\:</b></string>
+
+    <string name="error_no_connection">Lost Connection with Server</string>
+    <string name="error_update_failed">Failed to Update User Data</string>
+    <string name="error_permission_denied">Permission denied to read your External storage</string>
+    <string name="account_creation_succesful">Account Created</string>
+    <string name="error_no_data_found">No Data Found</string>
+    <string name="error_add_user_profile_failed">Could not create User Profile</string>
+    <string name="error_retrieving_data">Unable to Load Data.</string>
+    <string name="settings_version_number">Version 1.0</string>
+    <string name="account_delete_successful">Account Removed</string>
+    <string name="activity_settings">Manage Account</string>
+    <string name="default_bio">Tell us a bit about yourself!</string>
+    <string name="default_interests">What are your favourite things to do?</string>
+    <string name="dialog_delete_message">Confirm by entering your Password.</string>
+    <string name="dialog_delete_title">Delete Account</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="no_data_for_gallery">No Images Found on Device.</string>
+    <string name="error_loading_image">Unable to load Image.</string>
+    <string name="action_cancel">CANCEL</string>
+    <string name="action_proceed">PROCEED</string>
+    <string name="error_authenticating_credentails">Provided password invalid.</string>
+    <string name="prompt_delete_user">Delete User?</string>
 </resources>

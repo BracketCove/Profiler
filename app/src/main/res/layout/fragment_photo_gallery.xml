@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_fragment_gallery"
+    android:background="@color/colorPrimary"
+    tools:context="com.wiseass.profiler.photogallery.PhotoGalleryFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_gallery_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />
+
+    <ProgressBar
+        android:id="@+id/pro_gallery_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="visible"
+        />
+
+    <TextView
+        style="@style/Label.Sub"
+        android:id="@+id/lbl_gallery_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_for_gallery"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/imb_gallery_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        android:layout_gravity="top|left"
+        />
+</FrameLayout>

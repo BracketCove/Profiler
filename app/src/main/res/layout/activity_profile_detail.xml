@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_profile_detail_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wiseass.profiler.login.LogInActivity">
+
+    <FrameLayout
+        android:id="@+id/cont_profile_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

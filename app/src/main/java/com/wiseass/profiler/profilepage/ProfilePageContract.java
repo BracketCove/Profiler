@@ -26,17 +26,17 @@ public interface ProfilePageContract {
 
         void setDefaultProfilePhoto ();
 
-        //void startPhotoActivity ();
+        void startPhotoGalleryActivity();
 
-        //void startDetailActivity ();
+        void startProfileDetailActivity();
 
-        //void startProfileSettingsActivity (String name);
+        void startProfileSettingsActivity();
 
         void showLogoutSnackbar ();
 
         void startLoginActivity();
 
-        void setThumbnailLoadingIndictator(boolean show);
+        void setThumbnailLoadingIndicator(boolean show);
 
         void setDetailLoadingIndicators(boolean show);
     }

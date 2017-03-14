@@ -1,0 +1,210 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/cont_profile_page_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/cont_profile_page_avatar"
+            style="@style/UserAvatarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+
+            android:layout_toLeftOf="@+id/shim_center_horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/imb_page_logout"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:src="@drawable/ic_vpn_key_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/imb_page_user_settings"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/imb_page_logout"
+                android:background="@null"
+                android:src="@drawable/ic_settings_white_24dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imb_page_thumbnail"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_above="@+id/lbl_page_user_name"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_page_user_name"
+                style="@style/Label.UserAvatarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/lbl_page_user_email"
+                android:visibility="invisible"
+                tools:text="Derp Derpsen" />
+
+            <TextView
+                android:id="@+id/lbl_page_user_email"
+                style="@style/Label.UserAvatarEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:layout_marginBottom="64dp"
+                tools:text="derp@test.com" />
+
+            <ProgressBar
+                android:id="@+id/pro_profile_page_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/shim_center_horizontal"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/shim_center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:id="@+id/cont_profile_detail_bio"
+            style="@style/UserDetailContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/shim_center_horizontal"
+            android:layout_above="@+id/shim_center_vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/lbl_page_user_bio_sub"
+                style="@style/UserDetailHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:text="@string/user_bio" />
+
+            <View
+                android:id="@+id/div_bio"
+                style="@style/DividerAccent.UserDetail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lbl_page_user_bio_sub"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_page_user_bio"
+                style="@style/UserDetailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_bio"
+                android:ellipsize="end"
+                android:visibility="invisible"
+                tools:text="@string/user_bio_example" />
+
+            <ProgressBar
+                android:id="@+id/pro_profile_page_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_bio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cont_profile_detail_interests"
+            style="@style/UserDetailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/shim_center_vertical"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/shim_center_horizontal">
+
+            <TextView
+                android:id="@+id/lbl_page_user_interests_sub"
+                style="@style/UserDetailHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_border_black_24dp"
+                android:text="@string/user_interests" />
+
+            <View
+                android:id="@+id/div_interests"
+                style="@style/DividerAccent.UserDetail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lbl_page_user_interests_sub" />
+
+            <TextView
+                android:id="@+id/lbl_page_user_interests"
+                style="@style/UserDetailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_interests"
+                android:background="@drawable/user_detail_background"
+                android:ellipsize="end"
+                android:visibility="invisible"
+                tools:text="@string/user_interests_example" />
+
+            <ProgressBar
+                android:id="@+id/pro_profile_page_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_interests"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorAccent" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_edit_profile_details"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="right|center"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:scaleType="center"
+        android:src="@drawable/ic_create_white_24dp" />
+</android.support.design.widget.CoordinatorLayout>

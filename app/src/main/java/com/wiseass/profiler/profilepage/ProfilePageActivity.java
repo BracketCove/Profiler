@@ -25,6 +25,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         if (fragment == null){
             fragment = ProfilePageFragment.newInstance();
         }
+
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.cont_profile_page_fragment, fragment, PAGE_FRAGMENT)
                 .commit();

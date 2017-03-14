@@ -28,7 +28,7 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     private Button login, register;
     private TextView emailLabel, passwordLabel;
     private EditText emailInput, passwordInput;
-    //private ProgressBar progressBar;
+    private ProgressBar progressBar;
     private View contentContainer;
 
     private LoginContract.Presenter presenter;
@@ -54,14 +54,14 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     @Override
     public void onActivityCreated (Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        /*if (presenter == null) {
+        if (presenter == null) {
             presenter = new LoginPresenter(
                     AuthInjection.provideAuthSource(),
                     this,
                     SchedulerInjection.provideSchedulerProvider());
-        }*/
 
-        presenter.subscribe();
+            presenter.subscribe();
+        }
     }
 
     @Override
@@ -71,7 +71,8 @@ public class LoginFragment extends Fragment implements LoginContract.View {
         View v = inflater.inflate(R.layout.fragment_login, container, false);
 
 
-        contentContainer = v.findViewById(R.id.cont_login_content);
+        contentContainer = v.findViewById(R.id.cont_login_fragment_content);
+        progressBar = (ProgressBar) v.findViewById(R.id.pro_login_loading);
 
         emailInput = (EditText) v.findViewById(R.id.edt_login_email);
         passwordInput = (EditText) v.findViewById(R.id.edt_login_password);
@@ -106,11 +107,11 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     @Override
     public void showProgressIndicator(boolean show) {
         if (show){
-            //progressBar.setVisibility(View.VISIBLE);
-            //contentContainer.setVisibility(View.INVISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
+            contentContainer.setVisibility(View.INVISIBLE);
         } else {
-            //progressBar.setVisibility(View.INVISIBLE);
-            //contentContainer.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.INVISIBLE);
+            contentContainer.setVisibility(View.VISIBLE);
         }
     }
 

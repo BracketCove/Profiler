@@ -1,7 +1,5 @@
 package com.wiseass.profiler.data.auth;
 
-import com.wiseass.profiler.data.GenericTestData;
-
 import io.reactivex.Completable;
 import io.reactivex.Maybe;
 
@@ -12,6 +10,12 @@ import io.reactivex.Maybe;
 public class FakeAuthService implements AuthSource {
 
     boolean returnFailure = false;
+
+    private static final User fakeUser =
+            new User(
+                    "email@example.com",
+                    "someId"
+            );
 
     public FakeAuthService () {
 
@@ -25,7 +29,7 @@ public class FakeAuthService implements AuthSource {
     @Override
     public Completable createAccount(Credentials cred) {
         if (returnFailure){
-            Completable.error(new Exception());
+           return Completable.error(new Exception());
         }
         return Completable.complete();
     }
@@ -33,7 +37,7 @@ public class FakeAuthService implements AuthSource {
     @Override
     public Completable attemptLogin(Credentials cred) {
         if (returnFailure){
-            Completable.error(new Exception());
+            return  Completable.error(new Exception());
         }
         return Completable.complete();
     }
@@ -41,7 +45,7 @@ public class FakeAuthService implements AuthSource {
     @Override
     public Completable deleteUser() {
         if (returnFailure){
-            Completable.error(new Exception());
+            return  Completable.error(new Exception());
         }
         return Completable.complete();
     }
@@ -49,15 +53,17 @@ public class FakeAuthService implements AuthSource {
     @Override
     public Maybe<User> getUser() {
         if (returnFailure){
-            Maybe.error(new Exception());
+            return Maybe.error(new Exception());
         }
-        return Maybe.just(GenericTestData.getUser());
+
+        //TODO: make static user for this test
+        return Maybe.just(fakeUser);
     }
 
     @Override
     public Completable logUserOut() {
         if (returnFailure){
-            Completable.error(new Exception());
+            return Completable.error(new Exception());
         }
         return Completable.complete();
     }
@@ -65,7 +71,7 @@ public class FakeAuthService implements AuthSource {
     @Override
     public Completable reauthenticateUser(String password) {
         if (returnFailure){
-            Completable.error(new Exception());
+            return Completable.error(new Exception());
         }
         return Completable.complete();
     }

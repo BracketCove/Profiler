@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:divider="@drawable/horizontal_divider_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:background="@color/colorPrimary"
+    android:id="@+id/root_settings_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btn_settings_delete_account"
+        style="@style/Button.Settings"
+        android:text="@string/action_delete_account" />
+
+
+    <TextView
+        style="@style/Label.CredentialHeader"
+        android:id="@+id/lbl_settings_version"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/settings_version_number"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/pro_settings_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/cont_settings_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="8dp"
+        >
+
+        <include layout="@layout/card_reauthenticate_credentials"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

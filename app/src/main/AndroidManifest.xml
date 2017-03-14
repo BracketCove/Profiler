@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wiseass.profiler">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".createaccount.CreateAccountActivity" />
-        <activity android:name=".profilepage.ProfilePageActivity"></activity>
+        <activity android:name=".profilepage.ProfilePageActivity"/>
+        <activity android:name=".photogallery.PhotoGalleryActivity" />
+        <activity android:name=".photodetail.PhotoDetailActivity" />
+        <activity android:name=".profiledetail.ProfileDetailActivity" />
+        <activity android:name=".profilesettings.ProfileSettingsActivity"/>
     </application>
 
 </manifest>

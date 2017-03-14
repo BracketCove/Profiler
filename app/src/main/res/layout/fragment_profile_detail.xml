@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/root_fragment_profile_detail"
+    tools:context="com.wiseass.profiler.profiledetail.ProfileDetailFragment">
+
+    <RelativeLayout
+        android:id="@+id/cont_profile_detail_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageButton
+            android:id="@+id/imb_profile_detail_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/imb_profile_detail_done"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/ic_done_white_24dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lbl_detail_user_bio"
+        style="@style/UserDetailHeader.Detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:text="@string/user_bio"
+        android:layout_below="@+id/cont_profile_detail_buttons"
+        />
+
+    <EditText
+        android:id="@+id/edt_profile_bio_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        tools:text="Here is a bunch of random useless fucking text."
+        android:gravity="top|left"
+        android:padding="4dp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/lbl_detail_user_bio"
+        android:layout_above="@+id/div_center"
+
+        />
+
+    <View
+        android:id="@+id/div_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/horizontal_divider_accent"
+        />
+
+    <TextView
+        android:id="@+id/lbl_detail_user_interests"
+        style="@style/UserDetailHeader.Detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_star_border_black_24dp"
+        android:text="@string/user_interests"
+        android:layout_below="@+id/div_center"
+        />
+
+
+    <EditText
+        android:id="@+id/edt_profile_interests_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        tools:text="Here is a bunch of random useless fucking text."
+        android:gravity="top|left"
+        android:padding="4dp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/lbl_detail_user_interests"
+        />
+
+</RelativeLayout>
