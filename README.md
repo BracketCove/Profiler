@@ -8,7 +8,7 @@
 * [I'm a Senior Dev, curious about the APIs/Project](#im-an-intermediatesenior-developer)
 * [Project APIs/Concepts](#apis-and-architectures-used)
 * [Learning Sources/Inspiration](#sources)
-* [Support Me](#support-me)
+* [Support Me](#contactsupport-me)
 * [License](#license)
 
 ## What is Profiler?
@@ -73,7 +73,7 @@ If becoming a better developer is your goal, please visit, read, listen, and pla
 * [Testing made Sweet with a Mockito by Jeroen Mols](https://www.youtube.com/watch?v=DJDBl0vURD4&t=33s). One of my biggest frustrations with this project was how poorly people seem to Explain Unit Testing (that's partly because Android finally has some decent options for it). Not only does Jeroen explain the Mockito Testing API, but he gives plenty of insight as to what you actually want to test! This was the talk that made Unit Testing finally start to make sense for me.
 * [Fragmented Podcast](http://fragmentedpodcast.com/). Donn and Kaushik are doing everyone a huge service with this podcast. If you're a noob like me, listening to these two along with their all star guest line up (as far as Android goes) should be mandatory! I truly can't think of a better place to expose myself to powerful ideas and concepts from the Demi-gods of Dev.
 
-## Support me:
+## Contact/Support me:
 It's my personal goal to create FREE high-quality content, accesible by anyone who has an Internet connection, as I don't feel ownership over knowledge which has graciously been given to me for free (I've never taken a paid course for Android Development).
 
 That being said, if the 200+ hours of my time spent coding, researching, making learning aids, and producing content for this project, and the effort I take to explain things in a simple and clear way (which I often fail to do), is worth throwing a bit of money at, then please do!
