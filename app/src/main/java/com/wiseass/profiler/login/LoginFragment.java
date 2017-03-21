@@ -22,7 +22,11 @@ import com.wiseass.profiler.data.scheduler.SchedulerInjection;
 import com.wiseass.profiler.profilepage.ProfilePageActivity;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Responsibilities:
+ * This is a View (in MVP). It manages drawing/inflating the user interface, and
+ * it tells the Presenter when a UI Input event has occured.
+ *
+ * Really dumb. It tries not to make any decisions itself.
  */
 public class LoginFragment extends Fragment implements LoginContract.View {
     private Button login, register;

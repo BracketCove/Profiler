@@ -12,6 +12,10 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
+    <style name="InputField.Credential.Name">
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
     <style name="InputField.Credential.Email">
         <item name="android:inputType">textEmailAddress</item>
     </style>
@@ -59,8 +63,9 @@
 
     <style name="Label.UserAvatarName" >
         <item name="android:textSize">38sp</item>
-        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
     </style>
 
     <style name="Label.DetailSubHeader">
@@ -68,6 +73,7 @@
         <item name="android:alpha">.86</item>
         <item name="android:textSize">18sp</item>
         <item name="android:padding">8dp</item>
+
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:drawablePadding">8dp</item>
         <item name="android:gravity">bottom</item>

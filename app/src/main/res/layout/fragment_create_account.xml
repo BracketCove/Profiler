@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:paddingTop="64dp"
         >
 
         <TextView
@@ -34,7 +33,7 @@
 
         <EditText
             android:id="@+id/edt_create_name"
-            style="@style/InputField.Credential.Email"
+            style="@style/InputField.Credential.Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lbl_create_name_sub"

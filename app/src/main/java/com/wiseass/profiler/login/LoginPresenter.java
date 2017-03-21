@@ -9,19 +9,17 @@ import com.wiseass.profiler.util.BaseSchedulerProvider;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.observers.DisposableCompletableObserver;
 import io.reactivex.observers.DisposableMaybeObserver;
-import io.reactivex.observers.DisposableObserver;
-
 
 /**
- * Created by Ryan on 25/02/2017.
+ * Responsibilities:
+ * The Presenter makes decisions based on input from both the View (Fragment), and the Model (
+ * DatabaseService or AuthService)
  */
 public class LoginPresenter implements LoginContract.Presenter {
     private AuthSource authSource;
     private LoginContract.View view;
     private CompositeDisposable compositeDisposable;
     private BaseSchedulerProvider schedulerProvider;
-
-
 
     public LoginPresenter (AuthSource authSource,
                            LoginContract.View view,

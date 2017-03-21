@@ -55,6 +55,12 @@ android {
 
 }
 
+ext {
+    FIREBASE_VERSION = '10.0.1'
+    DAGGER_VERSION = '2.4'
+    JUNIT_VERSION = '4.12'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {

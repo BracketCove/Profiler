@@ -9,6 +9,10 @@ import com.wiseass.profiler.util.ActivityUtils;
 
 import static android.R.attr.fragment;
 
+/**
+ * Activity in Model View Presenter:
+ * Initialize the View and Presenter (by extension).
+ */
 public class LoginActivity extends AppCompatActivity {
     private static final String LOGIN_FRAGMENT = "LOGIN_FRAGMENT";
     private FragmentManager manager;

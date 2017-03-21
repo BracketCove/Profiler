@@ -30,7 +30,7 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
     private Button createAccount;
     private TextView emailLabel, passwordLabel, confirmLabel, nameLabel;
     private EditText emailInput, passwordInput, confirmInput, nameInput;
-    //private ProgressBar progressBar;
+    private ProgressBar progressBar;
     private View contentContainer;
 
     private CreateAccountContract.Presenter presenter;
@@ -68,7 +68,7 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_create_account, container, false);
 
-        //progressBar = (ProgressBar) v.findViewById(R.id.pro_create_account_loading);
+        progressBar = (ProgressBar) v.findViewById(R.id.pro_create_account_loading);
 
         contentContainer = v.findViewById(R.id.cont_create_account_content);
 
@@ -142,11 +142,11 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
     @Override
     public void showProgressIndicator(boolean show) {
         if (show){
-         //   progressBar.setVisibility(View.VISIBLE);
-         //   contentContainer.setVisibility(View.INVISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
+            contentContainer.setVisibility(View.INVISIBLE);
         } else {
-         //   progressBar.setVisibility(View.INVISIBLE);
-         //   contentContainer.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.INVISIBLE);
+            contentContainer.setVisibility(View.VISIBLE);
         }
     }
 

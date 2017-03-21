@@ -4,93 +4,85 @@
     android:id="@+id/root_login_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    >
+    android:background="@color/colorPrimary">
 
     <ScrollView
         android:id="@+id/scv_create_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <RelativeLayout
-    android:id="@+id/cont_login_fragment_content"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:paddingTop="64dp"
-    android:visibility="invisible"
-    >
+        <RelativeLayout
+            android:id="@+id/cont_login_fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
 
-    <TextView
-        android:id="@+id/lbl_login_header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        style="@style/Label.Sub"
-        android:text="@string/header_welcome"
-        android:layout_marginTop="16dp"
-        />
+            <TextView
+                android:id="@+id/lbl_login_header"
+                style="@style/Label.CredentialHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/header_welcome" />
 
-    <TextView
-        style="@style/Label.CredentialHeader"
-        android:id="@+id/lbl_login_email_sub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/prompt_email"
-        android:layout_below="@+id/lbl_login_header"
-        />
+            <TextView
+                android:id="@+id/lbl_login_email_sub"
+                style="@style/Label.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_login_header"
+                android:text="@string/prompt_email" />
 
-    <EditText
-        style="@style/InputField.Credential.Email"
-        android:id="@+id/edt_login_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lbl_login_email_sub"
-        android:hint="@string/prompt_email"
-        android:gravity="center_horizontal"
-        />
+            <EditText
+                android:id="@+id/edt_login_email"
+                style="@style/InputField.Credential.Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_login_email_sub"
+                android:gravity="center_horizontal"
+                android:hint="@string/prompt_email" />
 
-    <TextView
-        style="@style/Label.CredentialHeader"
-        android:id="@+id/lbl_login_password_sub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/prompt_confirm"
-        android:layout_below="@+id/edt_login_email"
-        />
+            <TextView
+                android:id="@+id/lbl_login_password_sub"
+                style="@style/Label.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_login_email"
+                android:text="@string/prompt_confirm" />
 
-    <EditText
-        style="@style/InputField.Credential.Password"
-        android:id="@+id/edt_login_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lbl_login_password_sub"
-        android:hint="@string/prompt_password"
-        android:gravity="center_horizontal"
-        tools:text="8675308"
+            <EditText
+                android:id="@+id/edt_login_password"
+                style="@style/InputField.Credential.Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_login_password_sub"
+                android:gravity="center_horizontal"
+                android:hint="@string/prompt_password"
+                tools:text="8675308"
 
-        />
+                />
 
-    <Button
-        style="@style/Button.Flat.Primary"
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="52dp"
-        android:layout_below="@+id/edt_login_password"
-        android:text="@string/action_sign_in_short"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/Button.Flat.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_below="@+id/edt_login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:text="@string/action_sign_in_short" />
 
-    <Button
-        style="@style/Button.Flat.Primary"
-        android:id="@+id/btn_create_account"
-        android:layout_width="wrap_content"
-        android:layout_height="52dp"
-        android:layout_below="@+id/btn_login"
-        android:text="@string/action_register"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        />
+            <Button
+                android:id="@+id/btn_create_account"
+                style="@style/Button.Flat.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_below="@+id/btn_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="@string/action_register" />
 
         </RelativeLayout>
 
@@ -102,6 +94,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:indeterminateTint="@color/colorAccent"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
 </FrameLayout>

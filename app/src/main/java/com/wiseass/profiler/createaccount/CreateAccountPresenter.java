@@ -69,6 +69,7 @@ public class CreateAccountPresenter implements CreateAccountContract.Presenter {
 
                                     @Override
                                     public void onError(Throwable e) {
+                                        view.showProgressIndicator(false);
                                         view.makeToast(e.toString());
                                     }
                                 })

@@ -39,7 +39,7 @@
 
             <EditText
                 android:id="@+id/edt_create_name"
-                style="@style/InputField.Credential.Email"
+                style="@style/InputField.Credential.Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/lbl_create_name_sub"
@@ -111,5 +111,13 @@
         </RelativeLayout>
 
     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pro_create_account_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="invisible" />
 
 </FrameLayout>

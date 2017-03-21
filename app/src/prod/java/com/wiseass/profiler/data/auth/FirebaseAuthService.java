@@ -34,7 +34,6 @@ public class FirebaseAuthService implements AuthSource {
         return new FirebaseAuthService();
     }
 
-
     @Override
     public Completable createAccount(final Credentials cred) {
         return Completable.create(new CompletableOnSubscribe() {
