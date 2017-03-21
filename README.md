@@ -19,6 +19,18 @@ I'll be building multiple iterations of the App, starting with basic features su
 
 The purpose of this project is to be both a tool to focus my own learning of Android Mobile Developement, and a teaching aid for when I feel comfortable explaining what I'm doing. Although I'm certainly not an Expert Developer, I've been told that my rambling has helped people in the past. I also frequently Livestream work on this project (among others), so that I'm able to both give and get feedback about Android Developement problems.
 
+### Login Component
+<img src="screenshot_login.png" alt="Login Screen" style="width: 270px; height: 480px;"/>
+
+### Create Account Component
+<img src="screenshot_create_account.png" alt="Create Account Screen" style="width: 270px; height: 480px;"/>
+
+### Profile Page Component
+<img src="screenshot_profile_page.png" alt="Profile Page Screen" style="width: 270px; height: 480px;"/>
+
+### Gallery Component Component
+<img src="screenshot_gallery.png" alt="Gallery Screen" style="width: 270px; height: 480px;"/>
+
 ## Can I use code from this Repo?
 Absolutely, pursuant to the project's [LICENSE](LICENSE.md). I primarily learned how to build Profiler by learning from free sources and referencing open source libraries, many of which I list (here)[#sources]. That being said, the logo (whenever I get around to making it) and name are my intellectual creations, so don't use them unless you are linking/reffering to this Repo.
 
