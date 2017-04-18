@@ -165,7 +165,6 @@ public class ProfilePageFragment extends Fragment implements ProfilePageContract
                     }
                 })
                 .show();
-
     }
 
     @Override
