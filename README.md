@@ -9,6 +9,7 @@
 * [Project APIs/Concepts](#apis-and-architectures-used)
 * [Learning Sources/Inspiration](#sources)
 * [Support Me](#contactsupport-me)
+* [Changes](#Changes)
 * [License](#license)
 
 ## What is Profiler?
@@ -86,11 +87,22 @@ If becoming a better developer is your goal, please visit, read, listen, and pla
 * [Fragmented Podcast](http://fragmentedpodcast.com/). Donn and Kaushik are doing everyone a huge service with this podcast. If you're a noob like me, listening to these two along with their all star guest line up (as far as Android goes) should be mandatory! I truly can't think of a better place to expose myself to powerful ideas and concepts from the Demi-gods of Dev.
 
 ## Contact/Support me:
-It's my personal goal to create FREE high-quality content, accesible by anyone who has an Internet connection, as I don't feel ownership over knowledge which has graciously been given to me for free (I've never taken a paid course for Android Development).
+It's my personal goal to create free high-quality content, accesible by anyone who has an Internet connection, as I don't feel ownership over knowledge which has graciously been given to me for free (I've never taken a paid course for Android Development).
 
 That being said, if the 200+ hours of my time spent coding, researching, making learning aids, and producing content for this project, and the effort I take to explain things in a simple and clear way (which I often fail to do), is worth throwing a bit of money at, then please do!
 
-If you're in a position where monetary support isn't an option (believe me, I understand), then you can also help out by liking/sharing my s**t on Social Media. This helps me with SEO and building an audience, and I greatly appreciate it! Lastly, drop me a comment on one of my videos. I read them. <3
+If you're in a position where monetary support isn't an option, then you can also help out by liking/sharing my stuff on Social Media. This helps me with SEO and building an audience, and I greatly appreciate it! Lastly, drop me a comment on one of my videos.
+
+## Changes:
+
+As of writing this commit, here is a non-exhaustive list of changes I plan to implement, when I have time to develope this App further (I'm working on multiple projects and I must use my spare time very deliberately):
+
+**Refactor Unit Tests:** Now that I'm more comfortable working with RxJava, Mockito, and Dagger in Unit Tests, I'll refactor Profiler's tests to be more useful, and easier/quicker to write. See my Repo [PosTrainer](https://github.com/BracketCove/PosTrainer) for my current approach to Unit Tests.
+
+**Change Authentication:** I'm going to change Authentication to use Firebase REST Auth. I'd like to incorporate REST using Retrofit and OKHttp into another App. 
+
+**Get Rid of Photo Gallery and Detail Features:** It doesn't make sense to not use a third party solution for this, whether that means a Library or just receiving some Data from another App via OnActivityResult. 
+
 
 [G+](https://plus.google.com/+wiseass)
 
